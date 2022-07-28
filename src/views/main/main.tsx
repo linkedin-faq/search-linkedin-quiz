@@ -5,7 +5,7 @@ import React from "react";
 const MainView: React.FC = () => {
   return (
     <Page>
-      <Dialog title="LinkedIn Skill assessment preparation"></Dialog>
+      <Dialog title="Skill assessment"></Dialog>
     </Page>
   );
 };

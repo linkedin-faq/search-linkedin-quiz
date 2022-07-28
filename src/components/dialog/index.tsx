@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  DialogMain,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogWindow,
-} from "./style";
+import { DialogHeader, DialogMain, DialogTitle, DialogWindow } from "./style";
 
 type propType = {
   title: string;
