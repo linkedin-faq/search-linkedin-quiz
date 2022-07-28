@@ -1,6 +1,6 @@
 import Page from "../../components/page";
 import Dialog from "../../components/Dialog";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CatalogList from "../../components/CatalogList";
 import Menu from "../../components/Menu";
 import allCourses from "../../constants/allCourses";
@@ -25,6 +25,29 @@ const MainView: React.FC = () => {
     const target = event.target as HTMLInputElement;
     setSearchQuery(target.value);
   };
+
+  useEffect(() => {
+    let newCourses;
+
+    if (activeCategoryItem === ALL_ITEMS_MENU_ITEM_TITLE) {
+      newCourses =
+        searchQuery === ""
+          ? allCourses
+          : allCourses.filter((course) =>
+              course.title.toLowerCase().includes(searchQuery.toLowerCase())
+            );
+    } else {
+      newCourses = allCourses.filter((course) => {
+        return (
+          (searchQuery !== ""
+            ? course.title.toLowerCase().includes(searchQuery.toLowerCase())
+            : course) && course.category === activeCategoryItem
+        );
+      });
+    }
+
+    setCourses(newCourses);
+  }, [searchQuery, activeCategoryItem]);
 
   return (
     <Page>

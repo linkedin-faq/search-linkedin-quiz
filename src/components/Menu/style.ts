@@ -14,16 +14,9 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const CatalogListDisclaimer = styled.p`
-  margin: 0 0 16px;
-  font-size: 14px;
-  line-height: 20px;
-  grid-area: disclaimer;
-
-  @media (min-width: 768px) {
-    width: 60%;
-    margin-bottom: 0;
-  }
+export const MenuItemContentTypeActive = styled.div`
+  background-color: #057642;
+  color: #fff;
 `;
 
 export const CatalogListMenu = styled.div`
