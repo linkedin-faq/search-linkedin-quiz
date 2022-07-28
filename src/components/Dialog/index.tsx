@@ -1,5 +1,11 @@
 import React from "react";
-import { DialogHeader, DialogMain, DialogTitle, DialogWindow } from "./style";
+import {
+  DialogContent,
+  DialogHeader,
+  DialogMain,
+  DialogTitle,
+  DialogWindow,
+} from "./style";
 
 type propType = {
   title: string;
@@ -13,7 +19,7 @@ const Dialog: React.FC<propType> = ({ title, children }) => {
         <DialogHeader>
           <DialogTitle>{title}</DialogTitle>
         </DialogHeader>
-        <div className="dialog__content">{children}</div>
+        <DialogContent>{children}</DialogContent>
       </DialogWindow>
     </DialogMain>
   );

@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  CourseCardDescription,
+  CourseCardImage,
+  CourseCardImageCanvas,
+  CourseCardTextDescription,
+  CourseCardTitle,
+  StyledCourseCard,
+} from "./style";
 
 type propType = {
   image: string | undefined;
@@ -9,15 +17,17 @@ type propType = {
 
 const CourseCard: React.FC<propType> = ({ image, title, url, description }) => {
   return (
-    <a className="course-card" href={url}>
-      <div className="course-card__image-canvas">
-        <img className="course-card__image" src={image} alt="" />
-      </div>
-      <div className="course-card__text-description">
-        <h3 className="course-card__title">{title}</h3>
-        <p className="course-card__description">Description: {description}</p>
-      </div>
-    </a>
+    <StyledCourseCard href={url}>
+      <CourseCardImageCanvas>
+        <CourseCardImage src={image} alt="" />
+      </CourseCardImageCanvas>
+      <CourseCardTextDescription>
+        <CourseCardTitle>{title}</CourseCardTitle>
+        <CourseCardDescription>
+          Description: {description}
+        </CourseCardDescription>
+      </CourseCardTextDescription>
+    </StyledCourseCard>
   );
 };
 

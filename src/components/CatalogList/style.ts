@@ -48,3 +48,15 @@ export const CatalogListItems = styled.ul`
   margin: 0;
   padding: 0;
 `;
+
+export const CatalogListInput = styled.input`
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  grid-area: input;
+  height: 20px;
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+`;

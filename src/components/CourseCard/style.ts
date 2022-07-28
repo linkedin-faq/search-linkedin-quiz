@@ -1,50 +1,43 @@
 import styled from "styled-components";
 
-export const СatalogListIcon = styled.div`
-  order: -1;
-  margin-bottom: 16px;
-  grid-area: icon;
-
-  @media (min-width: 768px) {
-    order: initial;
-    margin-bottom: 0;
-    margin-left: auto;
-  }
-`;
-
-export const CatalogListDescription = styled.div`
+export const StyledCourseCard = styled.a`
   display: flex;
+  padding: 12px 0;
+  text-decoration: none;
+  color: inherit;
+`;
+
+export const CourseCardImageCanvas = styled.div`
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+`;
+
+export const CourseCardImage = styled.img`
+  width: 100%;
+`;
+
+export const CourseCardTextDescription = styled.div`
+  display: flex;
+  justify-content: center;
   flex-direction: column;
-  padding-bottom: 12px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.6);
 
-  @media (min-width: 768px) {
-    display: grid;
-    grid-template-areas:
-      "disclaimer icon"
-      "input icon";
-    gap: 8px;
+  &:hover {
+    text-decoration: underline black;
   }
 `;
 
-export const CatalogListDisclaimer = styled.p`
-  margin: 0 0 16px;
-  font-size: 14px;
-  line-height: 20px;
-  grid-area: disclaimer;
-
-  @media (min-width: 768px) {
-    width: 60%;
-    margin-bottom: 0;
-  }
-`;
-
-export const CatalogListMenu = styled.div`
-  padding-top: 12px;
-`;
-
-export const CatalogListItems = styled.ul`
-  list-style: none;
+export const CourseCardTitle = styled.h3`
   margin: 0;
-  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+`;
+
+export const CourseCardDescription = styled.p`
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
 `;

@@ -2,6 +2,7 @@ import React from "react";
 import {
   CatalogListDescription,
   CatalogListDisclaimer,
+  CatalogListInput,
   CatalogListItems,
   CatalogListMenu,
   СatalogListIcon,
@@ -27,11 +28,10 @@ const CatalogList: React.FC<propType> = ({
       <CatalogListDescription>
         <CatalogListDisclaimer>{disclaimer}</CatalogListDisclaimer>
         <СatalogListIcon />
-        <input
+        <CatalogListInput
           onChange={onSearchInputChange}
           value={searchValue}
           type="text"
-          className="catalog-list__input"
           placeholder="Search all assessments"
         />
       </CatalogListDescription>
