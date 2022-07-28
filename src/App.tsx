@@ -1,8 +1,8 @@
 import React from "react";
-import "./App.css";
+import MainView from "./views/main";
 
 const App: React.FC = () => {
-  return <div className="App">TExt</div>;
+  return <MainView />;
 };
 
 export default App;

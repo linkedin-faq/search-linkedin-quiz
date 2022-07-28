@@ -1,7 +1,7 @@
-import blueSquare from "app/assets/blue-square.png";
-import greenSquare from "app/assets/green-square.png";
-import orangeSquare from "app/assets/orange-square.png";
-import redSquare from "app/assets/red-square.png";
+import blueSquare from "../../src/assets/blue-square.jpg";
+import greenSquare from "../../src/assets/green-square.png";
+import orangeSquare from "../../src/assets/orange-square.png";
+import redSquare from "../../src/assets/red-square.png";
 import getRandomNumber from "../helpers/get-random-number";
 
 const courseImages = [blueSquare, greenSquare, orangeSquare, redSquare];
@@ -9,7 +9,7 @@ const courseImages = [blueSquare, greenSquare, orangeSquare, redSquare];
 const minCourseImageIndex = 0;
 const maxCourseImageIndex = courseImages.length - 1;
 
-const courses = [
+const allCourses = [
   {
     title: "JavaScript",
     image:
@@ -745,4 +745,4 @@ const courses = [
   },
 ];
 
-export default courses;
+export default allCourses;
