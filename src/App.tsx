@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import allCourses from "./constants/allCourses";
-import Dialog from "./components/Dialog";
+import allCoursesStorage from "./constants/allCoursesStorage";
+import MainDialog from "./components/MainDialog";
 import AssessmentList from "./components/AssessmentList";
 import SortingButtons from "./components/SortingButtons";
 import { AssessmentResultsListItems } from "./components/AssessmentList/style";
@@ -11,12 +11,12 @@ const ALL_MENU_ITEMS_TITLE = "All";
 const RECOMMENDED = "Recommended";
 
 const App: React.FC = () => {
-  const [courses, setCourses] = useState(allCourses);
+  const [courses, setCourses] = useState(allCoursesStorage);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategoryItem, setActiveCategoryItem] = useState(RECOMMENDED);
   const courseCategories = [
     ALL_MENU_ITEMS_TITLE,
-    ...new Set(allCourses.map((course) => course.category)),
+    ...new Set(allCoursesStorage.map((course) => course.category)),
   ];
 
   const searchQueryHandler = (
@@ -32,12 +32,12 @@ const App: React.FC = () => {
     if (activeCategoryItem === ALL_MENU_ITEMS_TITLE) {
       newCourses =
         searchQuery === ""
-          ? allCourses
-          : allCourses.filter((course) =>
+          ? allCoursesStorage
+          : allCoursesStorage.filter((course) =>
               course.title.toLowerCase().includes(searchQuery.toLowerCase())
             );
     } else {
-      newCourses = allCourses.filter((course) => {
+      newCourses = allCoursesStorage.filter((course) => {
         return (
           (searchQuery !== ""
             ? course.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -52,7 +52,7 @@ const App: React.FC = () => {
   return (
     <div>
       <GlobalStyle />
-      <Dialog title="Skill assessment">
+      <MainDialog title="Skill assessment">
         <AssessmentList
           description="Check your skill level. Answer 15 multiple choice questions, score in the top 30%, and earn a skill badge."
           searchValue={searchQuery}
@@ -75,7 +75,7 @@ const App: React.FC = () => {
             </AssessmentResultsListItems>
           ))}
         </AssessmentList>
-      </Dialog>
+      </MainDialog>
     </div>
   );
 };

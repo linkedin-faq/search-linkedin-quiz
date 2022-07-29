@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const DialogMain = styled.div`
+export const StyledPage = styled.div`
   padding: 12px;
   background-color: #f3f2ef;
 `;
 
-export const DialogWindow = styled.div`
+export const StyledMainDialog = styled.div`
   border-radius: 5px;
   background: #fff;
 
@@ -15,18 +15,18 @@ export const DialogWindow = styled.div`
   }
 `;
 
-export const DialogHeader = styled.header`
+export const Header = styled.header`
   padding: 12px 24px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 `;
 
-export const DialogTitle = styled.h2`
+export const Title = styled.h2`
   margin: 0;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
 `;
 
-export const DialogContent = styled.div`
+export const Content = styled.div`
   padding: 12px 24px;
 `;

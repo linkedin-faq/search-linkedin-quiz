@@ -1,11 +1,11 @@
 import React from "react";
 import {
-  CourseCardDescription,
-  CourseCardImage,
-  CourseIcon,
-  CourseCardTextDescription,
-  CourseCardTitle,
-  StyledCourseCard,
+  Description,
+  Icon,
+  QuizIcon,
+  QuizTextCard,
+  Title,
+  StyledQuizCard,
 } from "./style";
 
 type propType = {
@@ -17,15 +17,15 @@ type propType = {
 
 const QuizCard: React.FC<propType> = ({ image, title, url, description }) => {
   return (
-    <StyledCourseCard href={url} data-test="Evgeny">
-      <CourseIcon>
-        <CourseCardImage src={image} alt="" />
-      </CourseIcon>
-      <CourseCardTextDescription>
-        <CourseCardTitle>{title}</CourseCardTitle>
-        <CourseCardDescription>Topics: {description}</CourseCardDescription>
-      </CourseCardTextDescription>
-    </StyledCourseCard>
+    <StyledQuizCard href={url}>
+      <QuizIcon>
+        <Icon src={image} alt="Quiz square icon" />
+      </QuizIcon>
+      <QuizTextCard>
+        <Title>{title}</Title>
+        <Description>Topics: {description}</Description>
+      </QuizTextCard>
+    </StyledQuizCard>
   );
 };
 
