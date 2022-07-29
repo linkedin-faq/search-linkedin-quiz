@@ -17,7 +17,7 @@ const Dialog: React.FC<propType> = ({ title, children }) => {
     <DialogMain>
       <DialogWindow>
         <DialogHeader>
-          <DialogTitle>{title}</DialogTitle>
+          <DialogTitle data-test="Zhenja">{title}</DialogTitle>
         </DialogHeader>
         <DialogContent>{children}</DialogContent>
       </DialogWindow>

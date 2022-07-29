@@ -1,10 +1,10 @@
 import React from "react";
 import {
-  AssessmentDialog,
+  DetailsAssessmentHeader,
   Description,
-  AssessmentListInput,
-  AssessmentListItems,
-  AssessmentMenuOptions,
+  SearchQuizInput,
+  AssessmentResultsListItems,
+  SortingOptionsButtons,
   MainSvgIcon,
 } from "./style";
 import SvgIcon from "../../assets/assessment-icon.svg";
@@ -12,7 +12,7 @@ import SvgIcon from "../../assets/assessment-icon.svg";
 type propType = {
   description: string;
   children: React.ReactNode;
-  menuOptions: React.ReactNode;
+  sortingOptions: React.ReactNode;
   searchValue: string;
   onSearchInputChange(event: React.FormEvent<HTMLInputElement>): void;
 };
@@ -22,22 +22,22 @@ const AssessmentList: React.FC<propType> = ({
   description,
   searchValue,
   onSearchInputChange,
-  menuOptions,
+  sortingOptions,
 }) => {
   return (
     <>
-      <AssessmentDialog>
+      <DetailsAssessmentHeader>
         <Description>{description}</Description>
         <MainSvgIcon src={SvgIcon} alt="Skill assessment description icon" />
-        <AssessmentListInput
+        <SearchQuizInput
           onChange={onSearchInputChange}
           value={searchValue}
           type="text"
           placeholder="Search assessment"
         />
-      </AssessmentDialog>
-      <AssessmentMenuOptions>{menuOptions}</AssessmentMenuOptions>
-      <AssessmentListItems>{children}</AssessmentListItems>
+      </DetailsAssessmentHeader>
+      <SortingOptionsButtons>{sortingOptions}</SortingOptionsButtons>
+      <AssessmentResultsListItems>{children}</AssessmentResultsListItems>
     </>
   );
 };

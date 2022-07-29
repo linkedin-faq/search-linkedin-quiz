@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import allCourses from "./constants/allCourses";
 import Dialog from "./components/Dialog";
 import AssessmentList from "./components/AssessmentList";
-import Menu from "./components/Menu";
-import { AssessmentListItems } from "./components/AssessmentList/style";
-import CourseCard from "./components/CourseCard";
+import SortingButtons from "./components/SortingButtons";
+import { AssessmentResultsListItems } from "./components/AssessmentList/style";
+import QuizCard from "./components/QuizCard";
 import GlobalStyle from "./theme/globalStyles";
 
 const ALL_MENU_ITEMS_TITLE = "All";
@@ -57,22 +57,22 @@ const App: React.FC = () => {
           description="Check your skill level. Answer 15 multiple choice questions, score in the top 30%, and earn a skill badge."
           searchValue={searchQuery}
           onSearchInputChange={searchQueryHandler}
-          menuOptions={
-            <Menu
+          sortingOptions={
+            <SortingButtons
               items={courseCategories}
               onItemClick={setActiveCategoryItem}
             />
           }
         >
           {courses.map((course) => (
-            <AssessmentListItems key={course.title}>
-              <CourseCard
+            <AssessmentResultsListItems key={course.title}>
+              <QuizCard
                 image={course.image}
                 title={course.title}
                 url={course.url}
                 description={course.description}
               />
-            </AssessmentListItems>
+            </AssessmentResultsListItems>
           ))}
         </AssessmentList>
       </Dialog>

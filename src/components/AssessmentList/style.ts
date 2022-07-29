@@ -12,7 +12,7 @@ export const MainSvgIcon = styled.img`
   }
 `;
 
-export const AssessmentDialog = styled.div`
+export const DetailsAssessmentHeader = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 12px;
@@ -39,17 +39,17 @@ export const Description = styled.p`
   }
 `;
 
-export const AssessmentMenuOptions = styled.div`
+export const SortingOptionsButtons = styled.div`
   padding-top: 12px;
 `;
 
-export const AssessmentListItems = styled.ul`
+export const AssessmentResultsListItems = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
 `;
 
-export const AssessmentListInput = styled.input`
+export const SearchQuizInput = styled.input`
   padding: 8px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 10px;

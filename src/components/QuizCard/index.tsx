@@ -2,7 +2,7 @@ import React from "react";
 import {
   CourseCardDescription,
   CourseCardImage,
-  CourseImage,
+  CourseIcon,
   CourseCardTextDescription,
   CourseCardTitle,
   StyledCourseCard,
@@ -15,12 +15,12 @@ type propType = {
   description: string;
 };
 
-const CourseCard: React.FC<propType> = ({ image, title, url, description }) => {
+const QuizCard: React.FC<propType> = ({ image, title, url, description }) => {
   return (
-    <StyledCourseCard href={url}>
-      <CourseImage>
+    <StyledCourseCard href={url} data-test="Evgeny">
+      <CourseIcon>
         <CourseCardImage src={image} alt="" />
-      </CourseImage>
+      </CourseIcon>
       <CourseCardTextDescription>
         <CourseCardTitle>{title}</CourseCardTitle>
         <CourseCardDescription>Topics: {description}</CourseCardDescription>
@@ -29,4 +29,4 @@ const CourseCard: React.FC<propType> = ({ image, title, url, description }) => {
   );
 };
 
-export default CourseCard;
+export default QuizCard;

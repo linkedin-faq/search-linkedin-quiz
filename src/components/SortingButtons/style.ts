@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MenuItems = styled.ul`
+export const SortingItems = styled.ul`
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -8,13 +8,13 @@ export const MenuItems = styled.ul`
   padding: 0;
 `;
 
-export const MenuItem = styled.li`
+export const SortingMenuItems = styled.li`
   &:not(:last-child) {
     margin-right: 4px;
   }
 `;
 
-export const MenuItemContent = styled.button`
+export const SortingButton = styled.button`
   padding: 8px 12px;
   font-size: 16px;
   font-weight: 700;
