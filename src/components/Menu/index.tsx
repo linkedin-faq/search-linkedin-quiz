@@ -1,5 +1,5 @@
 import React from "react";
-import { MenuItem, MenuItems } from "./style";
+import { MenuItem, MenuItemContent, MenuItems } from "./style";
 
 type propType = {
   items: string[];
@@ -14,15 +14,9 @@ const Menu: React.FC<propType> = ({ items, activeItem, onItemClick }) => {
         <MenuItems>
           {items.map((item) => (
             <MenuItem key={item}>
-              <button
-                className={`menu__item-content ${
-                  activeItem === item ? "menu__item-content_type_active" : ""
-                }`}
-                type="button"
-                onClick={(): void => onItemClick(item)}
-              >
+              <MenuItemContent onClick={(): void => onItemClick(item)}>
                 {item}
-              </button>
+              </MenuItemContent>
             </MenuItem>
           ))}
         </MenuItems>

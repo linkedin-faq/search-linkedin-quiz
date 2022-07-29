@@ -14,17 +14,26 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const MenuItemContentTypeActive = styled.div`
+export const MenuItemContent = styled.button`
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.6);
+
+  &:hover {
+    background-color: #057642;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const MenuItemContentTypeActive = styled.button`
   background-color: #057642;
   color: #fff;
-`;
-
-export const CatalogListMenu = styled.div`
-  padding-top: 12px;
-`;
-
-export const CatalogListItems = styled.ul`
-  list-style: none;
-  margin: 0;
-  padding: 0;
 `;

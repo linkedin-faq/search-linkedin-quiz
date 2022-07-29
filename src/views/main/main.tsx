@@ -1,4 +1,3 @@
-import Page from "../../components/page";
 import Dialog from "../../components/Dialog";
 import React, { useEffect, useState } from "react";
 import CatalogList from "../../components/CatalogList";
@@ -50,7 +49,7 @@ const MainView: React.FC = () => {
   }, [searchQuery, activeCategoryItem]);
 
   return (
-    <Page>
+    <div>
       <Dialog title="Skill assessment">
         <CatalogList
           disclaimer="Check your skill level. Answer 15 multiple choice questions&nbsp;15, score in the top 30%, and earn a skill badge."
@@ -76,7 +75,7 @@ const MainView: React.FC = () => {
           ))}
         </CatalogList>
       </Dialog>
-    </Page>
+    </div>
   );
 };
 
