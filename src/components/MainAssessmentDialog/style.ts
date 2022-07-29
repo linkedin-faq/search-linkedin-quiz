@@ -17,12 +17,11 @@ export const StyledMainDialog = styled.div`
 
 export const Header = styled.header`
   padding: 12px 24px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 `;
 
 export const Title = styled.h2`
   margin: 0;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 400;
   line-height: 28px;
 `;

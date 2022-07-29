@@ -41,3 +41,7 @@ export const Description = styled.p`
   font-size: 12px;
   line-height: 16px;
 `;
+
+export const Line = styled.div`
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+`;

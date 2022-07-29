@@ -6,9 +6,9 @@ type propType = {
   onItemClick: (item: string) => void;
 };
 
-const SortingButtons: React.FC<propType> = ({ items, onItemClick }) => {
+const SortingMenuButtons: React.FC<propType> = ({ items, onItemClick }) => {
   return (
-    <div>
+    <>
       {items.length > 0 && (
         <SortingItems>
           {items.map((item) => (
@@ -20,8 +20,8 @@ const SortingButtons: React.FC<propType> = ({ items, onItemClick }) => {
           ))}
         </SortingItems>
       )}
-    </div>
+    </>
   );
 };
 
-export default SortingButtons;
+export default SortingMenuButtons;

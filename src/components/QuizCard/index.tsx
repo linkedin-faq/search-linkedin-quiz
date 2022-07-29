@@ -6,6 +6,7 @@ import {
   QuizTextCard,
   Title,
   StyledQuizCard,
+  Line,
 } from "./style";
 
 type propType = {
@@ -17,15 +18,18 @@ type propType = {
 
 const QuizCard: React.FC<propType> = ({ image, title, url, description }) => {
   return (
-    <StyledQuizCard href={url}>
-      <QuizIcon>
-        <Icon src={image} alt="Quiz square icon" />
-      </QuizIcon>
-      <QuizTextCard>
-        <Title>{title}</Title>
-        <Description>Topics: {description}</Description>
-      </QuizTextCard>
-    </StyledQuizCard>
+    <>
+      <StyledQuizCard href={url}>
+        <QuizIcon>
+          <Icon src={image} alt="Quiz square icon" />
+        </QuizIcon>
+        <QuizTextCard>
+          <Title>{title}</Title>
+          <Description>Topics: {description}</Description>
+        </QuizTextCard>
+      </StyledQuizCard>
+      <Line />
+    </>
   );
 };
 

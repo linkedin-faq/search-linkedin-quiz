@@ -35,7 +35,7 @@ const allCoursesStorage = [
     description:
       ".NET Core, .NET Infrastructure, Design Patterns in .NET, Programming, Universal Windows Platform",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/dotnet-framework/dotnet-framework-quiz.md",
-    category: "Industry Knowledge",
+    category: "Tools & Technology",
   },
   {
     title: "Adobe Acrobat",
@@ -44,7 +44,7 @@ const allCoursesStorage = [
     description:
       "Accessibility, File Management, Forms, PDF Management, Printing",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
-    category: "Industry Knowledge",
+    category: "Tools & Technology",
   },
   {
     title: "Adobe Animate",
@@ -70,7 +70,7 @@ const allCoursesStorage = [
     description:
       "Colors and Effects, Documents, Interactive, Objects and Graphics and Images, Text",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
-    category: "Industry Knowledge",
+    category: "Tools & Technology",
   },
   {
     title: "Adobe Lightroom",
@@ -78,7 +78,7 @@ const allCoursesStorage = [
       courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "File Handling, Image Adjustments, Tools, Exporting, Panels",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
-    category: "Industry Knowledge",
+    category: "Tools & Technology",
   },
   {
     title: "Adobe Photoshop",
@@ -87,7 +87,7 @@ const allCoursesStorage = [
     description:
       "Image Adjustments, Layers and Smart Objects, Panels, Selections, Tools",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/adobe-photoshop/adobe-photoshop-quiz.md",
-    category: "Industry Knowledge",
+    category: "Tools & Technology",
   },
   {
     title: "Adobe Premiere Pro",
@@ -95,7 +95,7 @@ const allCoursesStorage = [
       courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Media, Project Setup, Audio, Timeline, Graphics",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/adobe-premiere-pro/adobe-premiere-pro-quiz.md",
-    category: "Industry Knowledge",
+    category: "Tools & Technology",
   },
   {
     title: "Adobe XD",
@@ -104,7 +104,7 @@ const allCoursesStorage = [
     description:
       "Animation, Integration, Interactivity, UX Design, XD Interface",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
-    category: "Industry Knowledge",
+    category: "Tools & Technology",
   },
   {
     title: "After Effects",
@@ -113,7 +113,7 @@ const allCoursesStorage = [
     description:
       "3D, Effects, Export, Keyframes, Project and Composition Settings",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
-    category: "Industry Knowledge",
+    category: "Tools & Technology",
   },
   {
     title: "Agile Methodologies",
@@ -741,6 +741,16 @@ const allCoursesStorage = [
     description:
       "DTD and DOCTYPE, Markup Language Intro, Stylesheets with CSS and XSLT, XML Schema, XML Syntax and Specifications",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/xml/xml-quiz.md",
+    category: "Industry Knowledge",
+  },
+  {
+    title: "Cybersecurity",
+    image:
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
+    description:
+      "Design and Architecture; Security Concepts; Security Engineering; Security Governance, Risk, and " +
+      "Compliance (GRC); Security Operations (SecOps)",
+    url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/cybersecurity/cybersecurity-quiz.md",
     category: "Industry Knowledge",
   },
 ];

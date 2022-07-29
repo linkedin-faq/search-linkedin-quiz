@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import allCoursesStorage from "./constants/allCoursesStorage";
-import MainDialog from "./components/MainDialog";
+import MainAssessmentDialog from "./components/MainAssessmentDialog";
 import AssessmentList from "./components/AssessmentList";
-import SortingButtons from "./components/SortingButtons";
+import SortingMenuButtons from "./components/SortingMenuButtons";
 import { AssessmentResultsListItems } from "./components/AssessmentList/style";
 import QuizCard from "./components/QuizCard";
 import GlobalStyle from "./theme/globalStyles";
+import { StyledPage } from "./style";
 
 const ALL_MENU_ITEMS_TITLE = "All";
 const RECOMMENDED = "Recommended";
@@ -50,15 +51,15 @@ const App: React.FC = () => {
   }, [searchQuery, activeCategoryItem]);
 
   return (
-    <div>
+    <StyledPage>
       <GlobalStyle />
-      <MainDialog title="Skill assessment">
+      <MainAssessmentDialog title="Skill assessment">
         <AssessmentList
           description="Check your skill level. Answer 15 multiple choice questions, score in the top 30%, and earn a skill badge."
           searchValue={searchQuery}
           onSearchInputChange={searchQueryHandler}
           sortingOptions={
-            <SortingButtons
+            <SortingMenuButtons
               items={courseCategories}
               onItemClick={setActiveCategoryItem}
             />
@@ -75,8 +76,8 @@ const App: React.FC = () => {
             </AssessmentResultsListItems>
           ))}
         </AssessmentList>
-      </MainDialog>
-    </div>
+      </MainAssessmentDialog>
+    </StyledPage>
   );
 };
 

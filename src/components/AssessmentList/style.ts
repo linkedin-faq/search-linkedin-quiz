@@ -16,7 +16,6 @@ export const DetailsAssessmentHeader = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 
   @media (min-width: 768px) {
     display: grid;

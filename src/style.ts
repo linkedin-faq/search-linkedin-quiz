@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
-export const SortingItems = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+export const StyledPage = styled.div`
+  padding: 12px;
+  background-color: #f3f2ef;
 `;
