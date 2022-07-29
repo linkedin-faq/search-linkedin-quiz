@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import allCourses from "./constants/allCourses";
 import Dialog from "./components/Dialog";
-import CatalogList from "./components/CatalogList";
+import AssessmentList from "./components/AssessmentList";
 import Menu from "./components/Menu";
-import { CatalogListItems } from "./components/CatalogList/style";
+import { AssessmentListItems } from "./components/AssessmentList/style";
 import CourseCard from "./components/CourseCard";
-import "./index.css";
+import GlobalStyle from "./theme/globalStyles";
 
-const ALL_ITEMS_MENU_ITEM_TITLE = "All";
+const ALL_MENU_ITEMS_TITLE = "All";
 const RECOMMENDED = "Recommended";
 
 const App: React.FC = () => {
@@ -15,7 +15,7 @@ const App: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategoryItem, setActiveCategoryItem] = useState(RECOMMENDED);
   const courseCategories = [
-    ALL_ITEMS_MENU_ITEM_TITLE,
+    ALL_MENU_ITEMS_TITLE,
     ...new Set(allCourses.map((course) => course.category)),
   ];
 
@@ -29,7 +29,7 @@ const App: React.FC = () => {
   useEffect(() => {
     let newCourses;
 
-    if (activeCategoryItem === ALL_ITEMS_MENU_ITEM_TITLE) {
+    if (activeCategoryItem === ALL_MENU_ITEMS_TITLE) {
       newCourses =
         searchQuery === ""
           ? allCourses
@@ -51,30 +51,30 @@ const App: React.FC = () => {
 
   return (
     <div>
+      <GlobalStyle />
       <Dialog title="Skill assessment">
-        <CatalogList
-          disclaimer="Check your skill level. Answer 15 multiple choice questions&nbsp;15, score in the top 30%, and earn a skill badge."
+        <AssessmentList
+          description="Check your skill level. Answer 15 multiple choice questions, score in the top 30%, and earn a skill badge."
           searchValue={searchQuery}
           onSearchInputChange={searchQueryHandler}
-          menu={
+          menuOptions={
             <Menu
               items={courseCategories}
-              activeItem={activeCategoryItem}
               onItemClick={setActiveCategoryItem}
             />
           }
         >
           {courses.map((course) => (
-            <CatalogListItems key={course.title}>
+            <AssessmentListItems key={course.title}>
               <CourseCard
                 image={course.image}
                 title={course.title}
                 url={course.url}
                 description={course.description}
               />
-            </CatalogListItems>
+            </AssessmentListItems>
           ))}
-        </CatalogList>
+        </AssessmentList>
       </Dialog>
     </div>
   );

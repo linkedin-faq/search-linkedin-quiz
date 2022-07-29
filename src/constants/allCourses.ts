@@ -1,8 +1,8 @@
-import blueSquare from "../../src/assets/blue-square.jpg";
-import greenSquare from "../../src/assets/green-square.png";
-import orangeSquare from "../../src/assets/orange-square.png";
-import redSquare from "../../src/assets/red-square.png";
-import getRandomNumber from "../helpers/get-random-number";
+import blueSquare from "../assets/blue-icon.jpg";
+import greenSquare from "../assets/green-icon.png";
+import orangeSquare from "../assets/orange-icon.png";
+import redSquare from "../assets/red-icon.png";
+import numberRandomizer from "../helpers/numberRundomizer";
 
 const courseImages = [blueSquare, greenSquare, orangeSquare, redSquare];
 
@@ -13,7 +13,7 @@ const allCourses = [
   {
     title: "JavaScript",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "JavaScript Advanced, JavaScript Fundamentals, Data Types and Structures, Functions, Objects, and Classes, Logic and Control Flow, Web Development",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/javascript/javascript-quiz.md",
@@ -22,7 +22,7 @@ const allCourses = [
   {
     title: "Microsoft Project",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Project Setup, Resources, Scheduling, Working with Multiple Projects, Working with Tasks",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/microsoft-project/microsoft-project-quiz.md",
@@ -31,7 +31,7 @@ const allCourses = [
   {
     title: ".NET Framework",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       ".NET Core, .NET Infrastructure, Design Patterns in .NET, Programming, Universal Windows Platform",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/dotnet-framework/dotnet-framework-quiz.md",
@@ -40,7 +40,7 @@ const allCourses = [
   {
     title: "Adobe Acrobat",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Accessibility, File Management, Forms, PDF Management, Printing",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
@@ -49,7 +49,7 @@ const allCourses = [
   {
     title: "Adobe Animate",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Animation, Drawing, File Formats, General Usage, Programming",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Tools & Technology",
@@ -57,7 +57,7 @@ const allCourses = [
   {
     title: "Adobe Illustrator",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Drawing, Formatting Objects, Interface, Reshaping Objects, Workflow",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/adobe-illustrator/adobe-illustrator-quiz.md",
@@ -66,7 +66,7 @@ const allCourses = [
   {
     title: "Adobe InDesign",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Colors and Effects, Documents, Interactive, Objects and Graphics and Images, Text",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
@@ -75,7 +75,7 @@ const allCourses = [
   {
     title: "Adobe Lightroom",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "File Handling, Image Adjustments, Tools, Exporting, Panels",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -83,7 +83,7 @@ const allCourses = [
   {
     title: "Adobe Photoshop",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Image Adjustments, Layers and Smart Objects, Panels, Selections, Tools",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/adobe-photoshop/adobe-photoshop-quiz.md",
@@ -92,7 +92,7 @@ const allCourses = [
   {
     title: "Adobe Premiere Pro",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Media, Project Setup, Audio, Timeline, Graphics",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/adobe-premiere-pro/adobe-premiere-pro-quiz.md",
     category: "Industry Knowledge",
@@ -100,7 +100,7 @@ const allCourses = [
   {
     title: "Adobe XD",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Animation, Integration, Interactivity, UX Design, XD Interface",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
@@ -109,7 +109,7 @@ const allCourses = [
   {
     title: "After Effects",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "3D, Effects, Export, Keyframes, Project and Composition Settings",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
@@ -118,7 +118,7 @@ const allCourses = [
   {
     title: "Agile Methodologies",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Agile Ceremonies, Agile Mindset and Culture, Frameworks and Scaling, Product Owner, Team Facilitator",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/agile-methodologies/agile-methodologies-quiz.md",
@@ -127,7 +127,7 @@ const allCourses = [
   {
     title: "Amazon Web Services (AWS)",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Compute, Databases, Networking, Security, Storage",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/aws/aws-quiz.md",
     category: "Industry Knowledge",
@@ -135,7 +135,7 @@ const allCourses = [
   {
     title: "Android",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Activities, Build Process, Fundamentals, Resources, User Interface",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/android/android-quiz.md",
@@ -144,7 +144,7 @@ const allCourses = [
   {
     title: "Angular",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Angular CLI, Components and Directives, Dependency Injection, Routing, Template Syntax",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/angularjs/angularjs-quiz.md",
@@ -153,7 +153,7 @@ const allCourses = [
   {
     title: "ArcGIS Products",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Geodatabases, Geoprocessing, Geospatial Data, Map Layout, User Interface",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
@@ -162,7 +162,7 @@ const allCourses = [
   {
     title: "AutoCAD",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Annotation, Design Reuse, Drafting, Interface, Output",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -170,7 +170,7 @@ const allCourses = [
   {
     title: "Autodesk Fusion 360",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Assembly, Interface, Modeling, Simulation, Workspaces",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -178,7 +178,7 @@ const allCourses = [
   {
     title: "Autodesk Inventor",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Assembly, Assembly Design, Drawing, Modeling, Sketching",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -186,7 +186,7 @@ const allCourses = [
   {
     title: "Autodesk Maya",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Animation, Camera, General, Materials, Modeling",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -194,7 +194,7 @@ const allCourses = [
   {
     title: "Avid Media Composer",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Audio, Graphics, Media Management, Timeline, Transitions",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -202,7 +202,7 @@ const allCourses = [
   {
     title: "AWS Lambda",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "AWS General, Configuration, Execution, Runtimes, Testing",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/aws-lambda/aws-lambda-quiz.md",
     category: "Industry Knowledge",
@@ -210,7 +210,7 @@ const allCourses = [
   {
     title: "Bash",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Operators, Scripting, Expansion, Environment, Constructs",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/bash/bash-quiz.md",
     category: "Industry Knowledge",
@@ -218,7 +218,7 @@ const allCourses = [
   {
     title: "C (Programming Language)",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "C Data Types and Data, Decision Structures, Functions, Loops, Memory Management and Storage",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/c-(programming-language)/c-quiz.md",
@@ -227,7 +227,7 @@ const allCourses = [
   {
     title: "C#",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Assemblies and Extensions, Communication, Fundamentals, Networking, Objects and Types",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/c%23/c-sharp-quiz.md",
@@ -236,7 +236,7 @@ const allCourses = [
   {
     title: "C++",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Compiler and Preprocessor, Object-Oriented Programming, Pointers and Data Structures, Standard Library, Syntax and Semantics",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/c%2B%2B/c%2B%2Bquiz.md",
@@ -245,7 +245,7 @@ const allCourses = [
   {
     title: "Cascading Style Sheets (CSS)",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "CSS Properties, CSS Selectors, Layout, Syntax and Semantics, Typography",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/css/css-quiz.md",
@@ -254,7 +254,7 @@ const allCourses = [
   {
     title: "Django",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Architecture, Configuration and Infrastructure, Models and Databases, Templates, URL Routing and Requests",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/django/django-quiz.md",
@@ -263,7 +263,7 @@ const allCourses = [
   {
     title: "Dreamweaver",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "CSS, Coding, HTML, Keyboard Shortcuts, Links",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -271,7 +271,7 @@ const allCourses = [
   {
     title: "Eclipse",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Debugging, Eclipse Interface, Java in Eclipse, Source Control, Workflow Optimization",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/eclipse/eclipse-quiz.md",
@@ -280,7 +280,7 @@ const allCourses = [
   {
     title: "Final Cut Pro",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Color, Editing, Organizing, Titles and Graphics, Trimming and Fine-Tuning",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
@@ -289,7 +289,7 @@ const allCourses = [
   {
     title: "Google Ads",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Bidding, Functionality, Optimizing, Setup, Terminology",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -297,7 +297,7 @@ const allCourses = [
   {
     title: "Google Analytics",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Analysis, Configuration, Functionality, Interface, Reports",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/google-analytics/google-analytics-quiz.md",
     category: "Recommended",
@@ -305,7 +305,7 @@ const allCourses = [
   {
     title: "Google Cloud Platform (GCP)",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Compute, Data, Security, Services, Setup",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/google-cloud-platform/gcp-quiz.md",
     category: "Industry Knowledge",
@@ -313,7 +313,7 @@ const allCourses = [
   {
     title: "Hadoop",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Hadoop Common, Hadoop Components, Hadoop Concepts, MapReduce, Using Hadoop",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/hadoop/hadoop-quiz.md",
@@ -322,7 +322,7 @@ const allCourses = [
   {
     title: "HTML",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Basic Structure, Forms, Global Attributes, Multimedia, Semantics",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/html/html-quiz.md",
@@ -331,7 +331,7 @@ const allCourses = [
   {
     title: "iMovie",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Editing, Audio, Media, Adjustment Settings, Titles",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -339,7 +339,7 @@ const allCourses = [
   {
     title: "Java",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Core APIs, Java Classes and Instances, Java Data Structures, Java Fundamentals, Java System Fundamentals",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/java/java-quiz.md",
@@ -348,7 +348,7 @@ const allCourses = [
   {
     title: "jQuery",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "AJAX, Animation, Events, Install and Deploy, Selecting and Traversing",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/jquery/jquery-quiz.md",
@@ -357,7 +357,7 @@ const allCourses = [
   {
     title: "JSON",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Comparison, Data Types, Limitations and Usage, Queries, Syntax Rules",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/json/json-quiz.md",
@@ -366,7 +366,7 @@ const allCourses = [
   {
     title: "Keynote",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Animating, Charts, Media, Setup, Text",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -374,7 +374,7 @@ const allCourses = [
   {
     title: "Kotlin",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Basics, Classes and Objects, Collections, Control Flow, Functions",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/kotlin/kotlin-quiz.md",
@@ -383,7 +383,7 @@ const allCourses = [
   {
     title: "Linux",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Access Control, Command Line, Disk Systems, Networking, System Configuration",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/linux/linux-assesment.md",
@@ -392,7 +392,7 @@ const allCourses = [
   {
     title: "Logic Pro",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Drummer Tracks and Drum Machine Designer, Mixing, Tools, Track Types, User Interface",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
@@ -401,7 +401,7 @@ const allCourses = [
   {
     title: "Machine Learning",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Algorithms, Data, General, Models, Types",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/machine-learning/machine-learning-quiz.md",
     category: "Recommended",
@@ -409,7 +409,7 @@ const allCourses = [
   {
     title: "MATLAB",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Functions, Language Fundamentals, Loops and Vectorization, Mathematics, Plotting",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/matlab/matlab-quiz.md",
@@ -418,7 +418,7 @@ const allCourses = [
   {
     title: "Maven",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Build Customization, Dependencies, Maven Command Line, Plugins, Project Definition",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/maven/maven-quiz.md",
@@ -427,7 +427,7 @@ const allCourses = [
   {
     title: "Microsoft Access",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Queries, Database Design, Forms, Reports, Tables",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/microsoft-access/microsoft-access.md",
     category: "Industry Knowledge",
@@ -435,7 +435,7 @@ const allCourses = [
   {
     title: "Microsoft Azure",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Azure Data Platform, Container Solutions, DevOps in Azure, Identity and Access, Modern Applications",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/microsoft-azure/microsoft-azure-quiz.md",
@@ -444,7 +444,7 @@ const allCourses = [
   {
     title: "Microsoft Excel",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Charts, Formatting, Formulas and Functions, User Interface, Working with Data",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/microsoft-excel/microsoft-excel-quiz.md",
@@ -453,7 +453,7 @@ const allCourses = [
   {
     title: "Microsoft Outlook",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Calendar, Customize, Email, General, People",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/microsoft-outlook/microsoft-outlook-quiz.md",
     category: "Industry Knowledge",
@@ -461,7 +461,7 @@ const allCourses = [
   {
     title: "Microsoft Power Automate",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Building from Scratch, Building from Templates, Fundamentals, Power Automate Admin, Types of Initialization",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
@@ -470,7 +470,7 @@ const allCourses = [
   {
     title: "Microsoft Power BI",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Admin, Concepts, Model, Visualize, Work with Data",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/microsoft-power-bi/microsoft-power-bi-quiz.md",
     category: "Recommended",
@@ -478,7 +478,7 @@ const allCourses = [
   {
     title: "Microsoft PowerPoint",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Animation and Transitions, Exporting, Media, Presenting, Setup",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/microsoft-power-point/microsoft-power-point-quiz.md",
@@ -487,7 +487,7 @@ const allCourses = [
   {
     title: "Microsoft Word",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Charts and Tables, Layout, Media, Setup, Text",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/microsoft-word/microsoft-word-quiz.md",
     category: "Recommended",
@@ -495,7 +495,7 @@ const allCourses = [
   {
     title: "MySQL",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Database Management, RDBMS Basics, SQL Statement Syntax, Stored Procedures, Triggers",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/mysql/mysql-quiz.md",
@@ -504,7 +504,7 @@ const allCourses = [
   {
     title: "Node.js",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Console, Events, HTTP, Modules, Packages",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/node.js/node.js-quiz.md",
     category: "Recommended",
@@ -512,7 +512,7 @@ const allCourses = [
   {
     title: "NoSQL",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Core NoSQL, NoSQL Applications, NoSQL Concepts, Optimizing NoSQL﻿, Using NoSQL",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/nosql/nosql-quiz.md",
@@ -521,7 +521,7 @@ const allCourses = [
   {
     title: "Object-Oriented Programming (OOP)",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Constructors and Destructors, Design Patterns, Four Principles of OOP, Object-Oriented Fundamentals, Software Development",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/oop/object-oriented-programming-quiz.md",
@@ -530,7 +530,7 @@ const allCourses = [
   {
     title: "Objective-C",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Classes, Collections, Functions, General, Variables",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/objective-c/objective-c-quiz.md",
     category: "Industry Knowledge",
@@ -538,7 +538,7 @@ const allCourses = [
   {
     title: "PHP",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Arrays, Classes, Language Basics, Syntax, Utility Functions",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/php/php-quiz.md",
     category: "Industry Knowledge",
@@ -546,7 +546,7 @@ const allCourses = [
   {
     title: "Pro Tools",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Recording, Editing, File Management, Navigating, Mixing",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -554,7 +554,7 @@ const allCourses = [
   {
     title: "Python (Programming Language)",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Advanced Concepts, Data Structures, Fundamentals, Object-Oriented Programming, Sorting",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/python/python-quiz.md",
@@ -563,7 +563,7 @@ const allCourses = [
   {
     title: "QuickBooks",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Money In: Collect Cash, Money In: Create Invoices, Navigating QuickBooks Desktop 2019, Payroll: Setting Up Employees, Setting Up Chart of Accounts",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/quickbooks/quickbooks-quiz.md",
@@ -572,7 +572,7 @@ const allCourses = [
   {
     title: "R (Programming Language)",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Data Structures, Data Management, Functions, Operators, Statistics",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/r/r-quiz.md",
@@ -581,7 +581,7 @@ const allCourses = [
   {
     title: "React.js",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Basics, Components, ESNext Syntax, Hooks, Tools",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/react/reactjs-quiz.md",
     category: "Recommended",
@@ -589,7 +589,7 @@ const allCourses = [
   {
     title: "REST APIs",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "API Security, Consuming APIs, Designing APIs, Implementing APIs, Measuring APIs",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/rest-api/rest-api-quiz.md",
@@ -598,7 +598,7 @@ const allCourses = [
   {
     title: "Revit",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Colors and Effects, Documents, Interactive, Objects/Graphics/Images, Text",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
@@ -607,7 +607,7 @@ const allCourses = [
   {
     title: "Rhino 3D",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Analysis, Editing, General Knowledge, Interface, Modeling",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -615,7 +615,7 @@ const allCourses = [
   {
     title: "Ruby on Rails",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "ActiveRecord, Architecture, Controllers, Routes, Views",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/ruby-on-rails/ruby-on-rails-quiz.md",
     category: "Industry Knowledge",
@@ -623,7 +623,7 @@ const allCourses = [
   {
     title: "Scala",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Control Flow, Data Structures, Data Types, Functional Programming, Object-Oriented Programming",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/scala/scala-quiz.md",
@@ -632,7 +632,7 @@ const allCourses = [
   {
     title: "Search Engine Optimization (SEO)",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "On-Page, Ranking, Technical, Terminology, Tools",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/seo/search-engine-optimization-quiz.md",
     category: "Industry Knowledge",
@@ -640,7 +640,7 @@ const allCourses = [
   {
     title: "SharePoint",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Administration, Libraries, Lists, SharePoint Features, SharePoint Permissions",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/sharepoint/sharepoint-quiz.md",
@@ -649,7 +649,7 @@ const allCourses = [
   {
     title: "SketchUp",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "Drawing, Tools, Interface, Groups and Components, LayOut",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
     category: "Industry Knowledge",
@@ -657,7 +657,7 @@ const allCourses = [
   {
     title: "SOLIDWORKS",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Assemblies, Drawings, Part Modeling, Sketching, User Interface and Basic Concepts",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
@@ -666,7 +666,7 @@ const allCourses = [
   {
     title: "Spring Framework",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description: "AOP, Boot, Core, Data, Web",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/spring-framework/spring-framework-quiz.md",
     category: "Industry Knowledge",
@@ -674,7 +674,7 @@ const allCourses = [
   {
     title: "Swift (Programming Language)",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Classes and Structs, Closures and Functions, Control Flow, General, Types",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/swift/swift-quiz.md",
@@ -683,7 +683,7 @@ const allCourses = [
   {
     title: "Transact-SQL (T-SQL)",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Data Types, Functions, SQL Syntax, Terminology, Writing Queries",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/t-sql/t-sql-quiz.md",
@@ -692,7 +692,7 @@ const allCourses = [
   {
     title: "Unity",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Animation, Asset Management, C# Scripting, Gameplay, Programming",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/",
@@ -701,7 +701,7 @@ const allCourses = [
   {
     title: "Visio",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Creating Business Process Diagrams, Creating Diagrams, Creating Organization Charts, Managing Text and Shapes and Pages, Visio Workspace",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/visio/visio-quiz.md",
@@ -710,7 +710,7 @@ const allCourses = [
   {
     title: "Visual Basic for Applications (VBA)",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Declarations, Procedures and Calls, Syntax, User-Defined Elements, VBE",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/vba/vba-quiz.md",
@@ -719,7 +719,7 @@ const allCourses = [
   {
     title: "Windows Server",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Active Directory, Configure Network Services and Access, Deploy/Manage/Maintain Servers, Install and Configure Server Roles and Features, Install and Configure Windows Server",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/windows-server/windows-server-quiz.md",
@@ -728,7 +728,7 @@ const allCourses = [
   {
     title: "WordPress",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "Core, Development, Performance & Accessibility, Plugins, Themes",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/wordpress/wordpress-quiz.md",
@@ -737,7 +737,7 @@ const allCourses = [
   {
     title: "XML",
     image:
-      courseImages[getRandomNumber(minCourseImageIndex, maxCourseImageIndex)],
+      courseImages[numberRandomizer(minCourseImageIndex, maxCourseImageIndex)],
     description:
       "DTD and DOCTYPE, Markup Language Intro, Stylesheets with CSS and XSLT, XML Schema, XML Syntax and Specifications",
     url: "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/xml/xml-quiz.md",

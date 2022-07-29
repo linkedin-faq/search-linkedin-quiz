@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const СatalogListIcon = styled.img`
+export const MainSvgIcon = styled.img`
   order: -1;
   margin-bottom: 16px;
   grid-area: icon;
@@ -12,7 +12,7 @@ export const СatalogListIcon = styled.img`
   }
 `;
 
-export const CatalogListDescription = styled.div`
+export const AssessmentDialog = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 12px;
@@ -27,7 +27,7 @@ export const CatalogListDescription = styled.div`
   }
 `;
 
-export const CatalogListDisclaimer = styled.p`
+export const Description = styled.p`
   margin: 0 0 16px;
   font-size: 14px;
   line-height: 20px;
@@ -39,17 +39,17 @@ export const CatalogListDisclaimer = styled.p`
   }
 `;
 
-export const CatalogListMenu = styled.div`
+export const AssessmentMenuOptions = styled.div`
   padding-top: 12px;
 `;
 
-export const CatalogListItems = styled.ul`
+export const AssessmentListItems = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
 `;
 
-export const CatalogListInput = styled.input`
+export const AssessmentListInput = styled.input`
   padding: 8px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 10px;

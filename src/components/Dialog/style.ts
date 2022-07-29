@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DialogMain = styled.div`
   padding: 12px;
-  background-color: darkgray;
+  background-color: #f3f2ef;
 `;
 
 export const DialogWindow = styled.div`

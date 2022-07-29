@@ -1,5 +1,5 @@
 {
-  "name": "take-linkedin-quiz-clone",
+  "name": "search-linkedin-quiz-clone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,11 +16,15 @@
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.25",
+    "eslint": "^8.20.0",
+    "prettier": "^2.7.1",
+    "styled-components": "^5.3.5"
+  },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,11 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/styled-components": "^5.1.25",
-    "eslint": "^8.20.0",
-    "prettier": "^2.7.1",
-    "styled-components": "^5.3.5"
   }
 }

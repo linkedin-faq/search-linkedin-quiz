@@ -7,7 +7,7 @@ export const StyledCourseCard = styled.a`
   color: inherit;
 `;
 
-export const CourseCardImageCanvas = styled.div`
+export const CourseImage = styled.div`
   flex-shrink: 0;
   width: 48px;
   height: 48px;

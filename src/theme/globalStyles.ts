@@ -5,8 +5,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     outline:0;
-    //box-sizing:border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system, system-ui, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, 
+    Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
   }
   #root{
     margin:0 auto;

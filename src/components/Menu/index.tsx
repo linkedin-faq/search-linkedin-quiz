@@ -3,7 +3,7 @@ import { MenuItem, MenuItemContent, MenuItems } from "./style";
 
 type propType = {
   items: string[];
-  activeItem: string;
+  activeItem?: string;
   onItemClick: (item: string) => void;
 };
 
