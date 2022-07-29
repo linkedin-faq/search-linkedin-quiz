@@ -7,6 +7,7 @@ import {
   CatalogListMenu,
   СatalogListIcon,
 } from "./style";
+import CatalogIcon from "../../assets/catalog-list-icon.svg";
 
 type propType = {
   disclaimer: string;
@@ -27,7 +28,7 @@ const CatalogList: React.FC<propType> = ({
     <div>
       <CatalogListDescription>
         <CatalogListDisclaimer>{disclaimer}</CatalogListDisclaimer>
-        <СatalogListIcon />
+        <СatalogListIcon src={CatalogIcon} alt="Catalog list icon" />
         <CatalogListInput
           onChange={onSearchInputChange}
           value={searchValue}

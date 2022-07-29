@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const DialogMain = styled.div`
-  box-sizing: border-box;
-  min-height: 100%;
   padding: 12px;
   background-color: darkgray;
 `;

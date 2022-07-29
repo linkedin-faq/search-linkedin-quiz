@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const СatalogListIcon = styled.div`
+export const СatalogListIcon = styled.img`
   order: -1;
   margin-bottom: 16px;
   grid-area: icon;

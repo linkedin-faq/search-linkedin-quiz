@@ -5,7 +5,7 @@ import CatalogList from "./components/CatalogList";
 import Menu from "./components/Menu";
 import { CatalogListItems } from "./components/CatalogList/style";
 import CourseCard from "./components/CourseCard";
-import GlobalStyle from "./theme/globalStyles";
+import "./index.css";
 
 const ALL_ITEMS_MENU_ITEM_TITLE = "All";
 const RECOMMENDED = "Recommended";
