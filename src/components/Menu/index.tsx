@@ -7,7 +7,7 @@ type propType = {
   onItemClick: (item: string) => void;
 };
 
-const Menu: React.FC<propType> = ({ items, activeItem, onItemClick }) => {
+const Menu: React.FC<propType> = ({ items, onItemClick }) => {
   return (
     <div className="menu">
       {items.length > 0 && (
