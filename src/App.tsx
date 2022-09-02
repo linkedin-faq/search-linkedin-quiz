@@ -5,8 +5,7 @@ import AssessmentList from "./components/AssessmentList";
 import SortingMenuButtons from "./components/SortingMenuButtons";
 import { AssessmentResultsListItems } from "./components/AssessmentList/style";
 import QuizCard from "./components/QuizCard";
-import GlobalStyle from "./theme/globalStyles";
-import { StyledPage } from "./style";
+import { StyledPage, NoResultFound } from "./style";
 
 const ALL_MENU_ITEMS_TITLE = "All";
 const RECOMMENDED = "Recommended";
@@ -52,7 +51,6 @@ const App: React.FC = () => {
 
   return (
     <StyledPage>
-      <GlobalStyle />
       <MainAssessmentDialog title="Skill assessment">
         <AssessmentList
           description="Check your skill level. Answer 15 multiple choice questions, score in the top 30%, and earn a skill badge."
@@ -64,17 +62,20 @@ const App: React.FC = () => {
               onItemClick={setActiveCategoryItem}
             />
           }
-        >
-          {courses.map((course) => (
-            <AssessmentResultsListItems key={course.title}>
-              <QuizCard
-                image={course.image}
-                title={course.title}
-                url={course.url}
-                description={course.description}
-              />
-            </AssessmentResultsListItems>
-          ))}
+        >{ !searchQuery ? (
+            <>
+              {courses.map((course) => (
+                  <AssessmentResultsListItems key={course.title}>
+                    <QuizCard
+                        image={course.image}
+                        title={course.title}
+                        url={course.url}
+                        description={course.description}
+                    />
+                  </AssessmentResultsListItems>
+              ))}
+            </>
+          ) : <NoResultFound>No result found</NoResultFound>}
         </AssessmentList>
       </MainAssessmentDialog>
     </StyledPage>

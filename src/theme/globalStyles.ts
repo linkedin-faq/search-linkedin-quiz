@@ -9,8 +9,12 @@ const GlobalStyle = createGlobalStyle`
     Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", 
     "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
   }
-  #root{
+  
+  html,
+  body,
+  #root,#root > div{
     margin:0 auto;
+    height: 100%;
   }
 `;
 
