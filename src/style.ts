@@ -6,9 +6,9 @@ export const StyledPage = styled.div`
 `;
 
 export const NoResultFound = styled.div`
-  font-size: 20px;
+  font-size: 60px;
   display: flex;
-  margin: 300px;
+  margin: 320px;
   height: 100%;
   align-content: space-around;
   align-items: center;

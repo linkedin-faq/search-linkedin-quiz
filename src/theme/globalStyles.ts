@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   body,
   #root,#root > div{
     margin:0 auto;
-    height: 100%;
+    min-height: 100%;
   }
 `;
 

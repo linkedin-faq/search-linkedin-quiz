@@ -75,7 +75,7 @@ const App: React.FC = () => {
                   </AssessmentResultsListItems>
               ))}
             </>
-          ) : <NoResultFound>No result found</NoResultFound>}
+          ) : <NoResultFound>?</NoResultFound>}
         </AssessmentList>
       </MainAssessmentDialog>
     </StyledPage>
