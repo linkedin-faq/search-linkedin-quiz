@@ -1,5 +1,5 @@
 import React from "react";
-import { Content, Header, StyledMainDialog, Title } from "./style";
+import { Content, Header, MainDialog, Title } from "./style";
 
 type propType = {
   title: string;
@@ -8,12 +8,12 @@ type propType = {
 
 const MainAssessmentDialog: React.FC<propType> = ({ title, children }) => {
   return (
-    <StyledMainDialog>
+    <MainDialog>
       <Header>
         <Title>{title}</Title>
       </Header>
       <Content>{children}</Content>
-    </StyledMainDialog>
+    </MainDialog>
   );
 };
 

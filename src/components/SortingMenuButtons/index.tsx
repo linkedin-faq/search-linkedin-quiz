@@ -1,24 +1,36 @@
 import React from "react";
-import { SortingMenuItems, SortingButton, SortingItems } from "./style";
+import { Button, Items, MenuItems } from "./style";
 
 type propType = {
   items: string[];
+  activeItem: string;
   onItemClick: (item: string) => void;
 };
 
-const SortingMenuButtons: React.FC<propType> = ({ items, onItemClick }) => {
+const SortingMenuButtons: React.FC<propType> = ({
+  items,
+  activeItem,
+  onItemClick,
+}) => {
   return (
     <>
       {items.length > 0 && (
-        <SortingItems>
+        <Items>
           {items.map((item) => (
-            <SortingMenuItems key={item}>
-              <SortingButton onClick={(): void => onItemClick(item)}>
-                {item}
-              </SortingButton>
-            </SortingMenuItems>
+            <MenuItems key={item}>
+              {activeItem === item ? (
+                <Button
+                  onClick={(): void => onItemClick(item)}
+                  style={{ backgroundColor: "#057642", color: "#fff" }}
+                >
+                  {item}
+                </Button>
+              ) : (
+                <Button onClick={(): void => onItemClick(item)}>{item}</Button>
+              )}
+            </MenuItems>
           ))}
-        </SortingItems>
+        </Items>
       )}
     </>
   );

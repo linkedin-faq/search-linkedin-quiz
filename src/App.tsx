@@ -5,7 +5,7 @@ import AssessmentList from "./components/AssessmentList";
 import SortingMenuButtons from "./components/SortingMenuButtons";
 import { AssessmentResultsListItems } from "./components/AssessmentList/style";
 import QuizCard from "./components/QuizCard";
-import { StyledPage, NoResultFound } from "./style";
+import { Page, NoResultFound } from "./style";
 
 const ALL_MENU_ITEMS_TITLE = "All";
 const RECOMMENDED = "Recommended";
@@ -50,7 +50,7 @@ const App: React.FC = () => {
   }, [searchQuery, activeCategoryItem]);
 
   return (
-    <StyledPage>
+    <Page>
       <MainAssessmentDialog title="Skill assessment">
         <AssessmentList
           description="Check your skill level. Answer 15 multiple choice questions, score in the top 30%, and earn a skill badge."
@@ -59,26 +59,30 @@ const App: React.FC = () => {
           sortingOptions={
             <SortingMenuButtons
               items={courseCategories}
+              activeItem={activeCategoryItem}
               onItemClick={setActiveCategoryItem}
             />
           }
-        >{ !searchQuery ? (
+        >
+          {!searchQuery ? (
             <>
               {courses.map((course) => (
-                  <AssessmentResultsListItems key={course.title}>
-                    <QuizCard
-                        image={course.image}
-                        title={course.title}
-                        url={course.url}
-                        description={course.description}
-                    />
-                  </AssessmentResultsListItems>
+                <AssessmentResultsListItems key={course.title}>
+                  <QuizCard
+                    image={course.image}
+                    title={course.title}
+                    url={course.url}
+                    description={course.description}
+                  />
+                </AssessmentResultsListItems>
               ))}
             </>
-          ) : <NoResultFound>?</NoResultFound>}
+          ) : (
+            <NoResultFound>?</NoResultFound>
+          )}
         </AssessmentList>
       </MainAssessmentDialog>
-    </StyledPage>
+    </Page>
   );
 };
 

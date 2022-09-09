@@ -5,7 +5,7 @@ export const StyledPage = styled.div`
   background-color: #f3f2ef;
 `;
 
-export const StyledMainDialog = styled.div`
+export const MainDialog = styled.div`
   border-radius: 5px;
   background: #fff;
 
